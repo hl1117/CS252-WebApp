@@ -4,13 +4,72 @@
 <body>
 
 
-<div class="login">
-<h1>Semester GPA</h1>
-<form method="past">
-<input type="text" name="u" placeholder="Username" required="required" />
-<!-- <input type="password" name="p" placeholder="Password" required="required" />
-<button type="button">Click Me!</button> -->
-</div>
+  <div class="classes">
+    <h1>Semester GPA</h1>
+    <form method="past">
+      <input type="text" name="u" placeholder="class name" id="class1" />
+      <input type="text" name="u" placeholder="class name" id="class2"  />
+      <input type="text" name="u" placeholder="class name" id="class3" />
+      <input type="text" name="u" placeholder="class name" id="class4" />
+      <input type="text" name="u" placeholder="class name" id="class5" />
+      <input type="text" name="u" placeholder="class name" id="class6" />
+      <input type="text" name="u" placeholder="class name" id="class7" />
+      <input type="text" name="u" placeholder="class name" id="class8" />
+    </div>
 
-</body>
-</html>
+    <div class="credithours">
+        <input type="text" name="u" placeholder="credithours" id="ch1" />
+        <input type="text" name="u" placeholder="credithours" id="ch2"  />
+        <input type="text" name="u" placeholder="credithours" id="ch3" />
+        <input type="text" name="u" placeholder="credithours" id="ch4" />
+        <input type="text" name="u" placeholder="credithours" id="ch5" />
+        <input type="text" name="u" placeholder="credithours" id="ch6" />
+        <input type="text" name="u" placeholder="credithours" id="ch7" />
+        <input type="text" name="u" placeholder="credithours" id="ch8" />
+      </div>
+
+
+    <div class="grades">
+      <input type="text" name="u" placeholder="grade achieved" id="g1"/>
+      <input type="text" name="u" placeholder="grade achieved" id="g2"/>
+      <input type="text" name="u" placeholder="grade achieved" id="g3"/>
+      <input type="text" name="u" placeholder="grade achieved" id="g4"/>
+      <input type="text" name="u" placeholder="grade achieved" id="g5"/>
+      <input type="text" name="u" placeholder="grade achieved" id="g6"/>
+      <input type="text" name="u" placeholder="grade achieved" id="g7"/>
+      <input type="text" name="u" placeholder="grade achieved" id="g8"/>
+    </div>
+
+    <div class="actions">
+      <button id="add" class="btn btn-secondary">
+        Add Class
+      </button>
+
+      <button onclick="calculate()" id="submit" class="btn btn-secondary">
+        Calculate GPA
+      </button>
+
+      <button id="reset" class="btn btn-secondary">
+        Reset
+      </button>
+    </div>
+
+    <div class="results">
+      <input type="text" name="u" placeholder="GPA Result" />
+
+      <button id="again" class="btn btn-secondary">
+        Check Again
+      </button>
+
+    </div>
+
+    <script src="CalcSemGPA.js"></script>
+<!--
+<script>
+  function Calculate() {
+    window.alert("ok");
+  }
+</script> -->
+
+  </body>
+  </html>
