@@ -1,10 +1,11 @@
 function getValues()
 {
-  var class1 = document.getElementById("class1").value;
+  //var class1 = document.getElementById("class1").value;
   var class3 = document.getElementById("ch1").value;
   var gpaVal1 = getNumbers();
-  var indexPoint = class3 * gpaVal;
-  window.alert("index points: " + indexPoint);
+  var indexPoint = class3 * gpaVal1;
+  // window.alert("index points: " + indexPoint);
+  document.write(indexPoint);
 }
 
 
