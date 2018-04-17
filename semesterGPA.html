@@ -7,7 +7,7 @@
   <div class="classes">
     <h1>Semester GPA</h1>
     <form method="past">
-      <input type="text" name="u" placeholder="class" id="class1" />
+      <input type="text" name="u" placeholder="class name" id="class1" />
       <input type="text" name="u" placeholder="class name" id="class2"  />
       <input type="text" name="u" placeholder="class name" id="class3" />
       <input type="text" name="u" placeholder="class name" id="class4" />
@@ -45,13 +45,24 @@
         Add Class
       </button>
 
-      <button onclick="calculate()" id="submit" class="btn btn-secondary">
+      <button id="submit" class="btn btn-secondary">
         Calculate GPA
       </button>
 
       <button id="reset" class="btn btn-secondary">
         Reset
       </button>
+
+      <button onclick="myFunction()">Click me</button>
+
+      <p id="demo"></p>
+
+      <script>
+      function myFunction() {
+          document.getElementById("demo").innerHTML = "Hello World";
+      }
+      </script>
+
     </div>
 
     <div class="results">
@@ -63,7 +74,7 @@
 
     </div>
 
-    <script src="CalcSemGPA.js"></script>
+    <script src="calc.js"></script>
 
   </body>
   </html>
