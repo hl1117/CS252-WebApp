@@ -1,80 +1,32 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
+<meta charset="utf-8">
+
+<h1>Calculate<span>Your<span>Semester<span>GPA</h1>
+<form>
+  <input type="text" name="class1" placeholder="class 1" id="class1">
+  <input type="text" name="gpa1" placeholder="gpa 1" id="gpa1">
+  <input type="text" name="ch1" placeholder="credit hours" id="ch1">
+  <button onclick="getValues()">Calculate</button>
+  <select id="grades">
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="B-">B-</option>
+    </select>
+    <br><br>
+    <button type="submit" onclick="getNumbers()">Submit</button>
 
 
-  <div class="classes">
-    <h1>Semester GPA</h1>
-    <form method="past">
-      <input type="text" name="u" placeholder="class name" id="class1" />
-      <input type="text" name="u" placeholder="class name" id="class2"  />
-      <input type="text" name="u" placeholder="class name" id="class3" />
-      <input type="text" name="u" placeholder="class name" id="class4" />
-      <input type="text" name="u" placeholder="class name" id="class5" />
-      <input type="text" name="u" placeholder="class name" id="class6" />
-      <input type="text" name="u" placeholder="class name" id="class7" />
-      <input type="text" name="u" placeholder="class name" id="class8" />
-    </div>
-
-    <div class="credithours">
-        <input type="text" name="u" placeholder="credithours" id="ch1" />
-        <input type="text" name="u" placeholder="credithours" id="ch2"  />
-        <input type="text" name="u" placeholder="credithours" id="ch3" />
-        <input type="text" name="u" placeholder="credithours" id="ch4" />
-        <input type="text" name="u" placeholder="credithours" id="ch5" />
-        <input type="text" name="u" placeholder="credithours" id="ch6" />
-        <input type="text" name="u" placeholder="credithours" id="ch7" />
-        <input type="text" name="u" placeholder="credithours" id="ch8" />
-      </div>
+</form>
 
 
-    <div class="grades">
-      <input type="text" name="u" placeholder="grade achieved" id="g1"/>
-      <input type="text" name="u" placeholder="grade achieved" id="g2"/>
-      <input type="text" name="u" placeholder="grade achieved" id="g3"/>
-      <input type="text" name="u" placeholder="grade achieved" id="g4"/>
-      <input type="text" name="u" placeholder="grade achieved" id="g5"/>
-      <input type="text" name="u" placeholder="grade achieved" id="g6"/>
-      <input type="text" name="u" placeholder="grade achieved" id="g7"/>
-      <input type="text" name="u" placeholder="grade achieved" id="g8"/>
-    </div>
+ 
 
-    <div class="actions">
-      <button id="add" class="btn btn-secondary">
-        Add Class
-      </button>
 
-      <button id="submit" class="btn btn-secondary">
-        Calculate GPA
-      </button>
 
-      <button id="reset" class="btn btn-secondary">
-        Reset
-      </button>
 
-      <button onclick="myFunction()">Click me</button>
+<script src="semesterGPA.js"></script>
 
-      <p id="demo"></p>
-
-      <script>
-      function myFunction() {
-          document.getElementById("demo").innerHTML = "Hello World";
-      }
-      </script>
-
-    </div>
-
-    <div class="results">
-      <input type="text" name="u" placeholder="GPA Result" />
-
-      <button id="again" class="btn btn-secondary">
-        Check Again
-      </button>
-
-    </div>
-
-    <script src="calc.js"></script>
-
-  </body>
-  </html>
+</html>
