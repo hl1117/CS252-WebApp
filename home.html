@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+  <title>NAVBAR</title>
+</head>
+
+<header>
+  <h1>GPA<span>calculatR</h1>
+    <nav>
+      <ul>
+        <li><a href="semesterGPA.html">Calculate your Semester GPA</a></li>
+        <li><a href="cumulativeGPA.html">Calculate your Cumulative GPA</a></li>
+        <li><a href="courseGrade.html">Calculate your Current Course Grade</a></li>
+		<button onclick="logout()">Logout</button>
+		<button onclick="test()">testing</button>
+		<button onclick="classes()">classes</button>
+
+      </ul>
+    </nav>
+    
+<body onload="script();"></body>
+    
+    
+</header>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAb8vveT3HAG9onvSvs6Cn5qkS22KK0Po0",
+    authDomain: "cs252-58cdc.firebaseapp.com",
+    databaseURL: "https://cs252-58cdc.firebaseio.com",
+    projectId: "cs252-58cdc",
+    storageBucket: "cs252-58cdc.appspot.com",
+    messagingSenderId: "895628017578"
+  };
+  firebase.initializeApp(config);
+  
+  
+  logout=()=>{
+  	firebase.auth().signOut()
+  	.then(function() {
+  		//window.alert("Sign out Successful")
+  		window.location = 'index.html'
+  	}, function(error) {
+  		window.alert("Sign out failed")
+  	});	
+  }
+  
+  
+</script>
+
+<script src="home.js"></script>
+
+</html>
