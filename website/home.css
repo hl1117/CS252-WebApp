@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+body {
+  background-color: #2D283E;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  color: #EAE7DC;
+  font-size: 100px;
+  text-align: center;
+  font-family: Rubik;
+  /*word-spacing: 20px;*/
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-column-gap: 50px;
+  grid-row-gap: 300px;
+  text-align: center;
+  font-family: Rubik;
+}
+
+.grid-item1 {
+  text-align: center;
+  background-color: #4C495D;
+  color: #AC3B61;
+  padding: 100px 58px;
+  border-radius: 12px;
+  font-family: Rubik;
+}
+
+.grid-item2 {
+  text-align: center;
+  background-color: #D1D7E0;
+  color: #AC3B61;
+  padding: 100px 50px;
+  border-radius: 12px;
+  font-family: Rubik;
+}
+
+.grid-item3 {
+  text-align: center;
+  background-color: #564F6F;
+  color: #AC3B61;
+  padding: 100px 34px;
+  border-radius: 12px;
+  font-family: Rubik;
+
+}
+
+.grid-item4 {
+  text-align: center;
+  background-color: #EDC7B7;
+  color: #AC3B61;
+  padding: 100px 40px;
+  border-radius: 12px;
+  font-family: Rubik;
+
+}
+
+.grid-item5 {
+  text-align: center;
+  background-color: #BAB2B5;
+  color: #AC3B61;
+  padding: 100px 105px;
+  border-radius: 12px;
+  font-family: Rubik;
+}
+
+.grid-item6 {
+  text-align: center;
+  background-color: #EDC7B7;
+  color: #AC3B61;
+  padding: 101px 123px;
+  border-radius: 12px;
+  font-family: Rubik;
+}
+
+
+/* a:hover, a:active {
+  background-color: #BAB2B5;
+} */
+
+
+.logout  {
+  background-color: #EDC7B7;
+  font-size: 18px;
+  color: #AC3B61;
+  border-color: #EDC7B7;
+  border-radius: 8px;
+  position: absolute;
+  left: 1157px;
+  top: 25px;
+  font-family: Rubik;
+}

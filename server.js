@@ -28,6 +28,10 @@ app.get('/profile.html', function (res, req) {
   res.render('profile');
 })
 
+app.get('/us.html', function (res, req) {
+  res.render('us');
+})
+
 app.listen(3000, function () {
   console.log('app starting')
 })

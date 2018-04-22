@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="home.css">
   <title>NAVBAR</title>
 </head>
 
 <header>
-  <h1>GPA<span>calculatR</h1>
+  <h1>GPA CalculatR</h1>
+  <br></br>
     <nav>
       <ul>
-        <li><a href="semesterGPA.html">Calculate your Semester GPA</a></li>
-        <li><a href="cumulativeGPA.html">Calculate your Cumulative GPA</a></li>
-        <li><a href="courseGrade.html">Calculate your Current Course Grade</a></li>
-        <li><a href="desiredGrade.html">Calculate your Desired Final Grade</a></li>
-        <li><a href="profile.html">Profile Settings</a></li>
-        <button onclick="logout()">Logout</button>
+        <div class="grid-container">
+        <div><li><a href="semesterGPA.html" class="grid-item1">Calculate your Semester GPA</a></li></div>
+        <div><li><a href="cumulativeGPA.html" class="grid-item2">Calculate your Cumulative GPA</a></li></div>
+        <div><li><a href="courseGrade.html" class="grid-item3">Calculate your Current Course Grade</a></li></div>
 
+        <div><li><a href="desiredGrade.html" class="grid-item4">Calculate your Desired Final Grade</a></li></div>
+        <div><li><a href="profile.html" class="grid-item5">Profile Settings</a></li></div>
+        <div><li><a href="us.html" class="grid-item6">About Us</a></li></div>
 
+      </div>
+      <button class="logout"onclick="logout()">Logout</button>
       </ul>
     </nav>
 

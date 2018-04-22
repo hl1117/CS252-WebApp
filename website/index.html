@@ -2,14 +2,15 @@
 <head>
 <meta charset="utf-8">
   <title>NAVBAR</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
   <h1>GPA<span>calculatR</h1>
-  
+
   	<button onclick="googleSignIn()">Google Signin</button>
-  
-  
-	
+
+
+
 	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 	<script>
   // Initialize Firebase
@@ -22,10 +23,10 @@
     messagingSenderId: "895628017578"
   };
   firebase.initializeApp(config);
-  
-  
+
+
   googleSignIn=()=>{
-  
+
   	var provider = new firebase.auth.GoogleAuthProvider();
   	firebase.auth().signInWithPopup(provider).then(function(result) {
   		var token = result.credential.accessToken;
@@ -45,23 +46,23 @@
 //   	}).catch(function(err){
 //   		console.log(err)
 //   		console.log("Failed to do")
-//   	})	
+//   	})
   }
-  
+
   // firebase.auth().onAuthStateChanged(function(user) {
 //       if (user) {
 //       	//window.alert("user is logged in")
 //       	window.location = 'home.html'
-//       	
+//
 //       } else {
 //       	//window.alert("No user is logged in - ERROR!")
 //       	window.location = 'index.html'
 //       }
 //     });
-  
-  
+
+
 </script>
-  
+
   <script src="app.js"></script>
-   
+
 </html>
