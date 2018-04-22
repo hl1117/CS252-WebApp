@@ -1,8 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
 li {
   display: inline;
   float: left;
 }
 
+h1 {
+  color: #EAE7DC;
+  font-size: 100px;
+  text-align: center;
+  font-family: Rubik;
+}
+
+h2 {
+  font-family: Rubik;
+}
 
 ul {
   list-style-type: none;
@@ -27,4 +39,34 @@ li a:hover {
 .active {
   background-color: #4CAF50;
   color: white;
+}
+
+p {
+  font-family: Rubik;
+}
+
+.currentGrade {
+  border-radius: 4px;
+}
+
+.desiredGrade {
+  border-radius: 4px;
+}
+
+.finalWorth {
+  border-radius: 4px;
+}
+
+.gradeNeeded {
+  border-radius: 4px;
+}
+
+.submit {
+  background-color: #EDC7B7;
+  font-size: 18px;
+  color: #AC3B61;
+  border-color: #EDC7B7;
+  border-radius: 8px;
+  position: absolute;
+  font-family: Rubik;
 }

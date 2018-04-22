@@ -1,8 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
 li {
   display: inline;
   float: left;
 }
 
+h1 {
+  color: #EAE7DC;
+  font-size: 100px;
+  text-align: center;
+  font-family: Rubik;
+  /*word-spacing: 20px;*/
+}
 
 ul {
   list-style-type: none;

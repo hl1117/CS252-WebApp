@@ -5,6 +5,7 @@
 </head>
 
 <ul>
+  <li><a href="home.html">Home</a></li>
 	<li><a href="semesterGPA.html">Calculate your Semester GPA</a></li>
 	<li><a href="cumulativeGPA.html">Calculate your Cumulative GPA</a></li>
 	<li><a href="courseGrade.html">Calculate your Current Course Grade</a></li>
@@ -18,11 +19,11 @@
 
 <h3 id="header">Enter your personal details</h3>
 
-<p>Name: <input type="text" id="name" placeholder="Enter your first and last name"></p>
-<p>Email: <input type="text" id="email" placeholder="Enter you email address"></p>
-<p>Major: <input type="text" id="major" placeholder="Enter your major"></p>
-<p>Minor: <input type="text" id="minor" placeholder="Enter your minor"></p>
-<p>Year of Graduation: <input type="text" id="gradyear" placeholder="Enter your year of graduation"></p>
+<p>Name: <input type="text" id="name" placeholder="Enter your first and last name" class="name"></p>
+<p>Email: <input type="text" id="email" placeholder="Enter you email address" class="email"></p>
+<p>Major: <input type="text" id="major" placeholder="Enter your major" class="major"></p>
+<p>Minor: <input type="text" id="minor" placeholder="Enter your minor" class="minor"></p>
+<p>Year of Graduation: <input type="text" id="gradyear" placeholder="Enter your year of graduation" class="gradyear"></p>
 <p>Select your College:
   <select id="college">
   <option value="" disabled selected>Select</option>
@@ -39,8 +40,8 @@
   <option value="cvm">College of Veterinary Medicine</option>
 </select></p>
 
-<button type="button" onclick="updateinfo()">UPDATE PERSONAL SETTINGS</button>
-<button type="button" onclick="gotocollegewebsite()">VISIT YOUR COLLEGE WESBITE</button>
+<button type="button" onclick="updateinfo()" class="updateinfo">UPDATE PERSONAL SETTINGS</button>
+<button type="button" onclick="gotocollegewebsite()" class="gotocollegewebsite">VISIT YOUR COLLEGE WESBITE</button>
 
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 <script>
