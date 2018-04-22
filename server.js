@@ -20,6 +20,14 @@ app.get('/cumulativeGPA.html', function (res, req) {
   res.render('cumulativeGPA');
 })
 
+app.get('/desiredGrade.html', function (res, req) {
+  res.render('desiredGrade');
+})
+
+app.get('/profile.html', function (res, req) {
+  res.render('profile');
+})
+
 app.listen(3000, function () {
   console.log('app starting')
 })

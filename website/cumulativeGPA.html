@@ -1,12 +1,66 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Cumulative GPA</title>
-</head>
 <body>
 
-<h1>Calculate Your Cumulative GPA </h1>
+<input type="text" id="cGPA" placeholder="Cumulative GPA to date">
+	<input type="text" id="creds" placeholder="total credits earned to date">
 
+	<table>
+		<tr>
+			<th>Class</th>
+			<th>Grade</th>
+			<th>Hours</th>
+		</tr>
+		<tr>
+			<td>Class 1</td>
+			<td>
+			<div class="mdl-selectfield">
+							<select id="row1Select">
+								<option value="" disabled selected>Select</option>
+									<option value="A+/A">A+/A</option>
+							<option value="A-">A-</option>
+							<option value="B+">B+</option>
+							<option value="B">B</option>
+							<option value="B-">B-</option>
+							<option value="C+">C+</option>
+							<option value="C">C</option>
+							<option value="C-">C-</option>
+							<option value="D+">D+</option>
+							<option value="D">D</option>
+							<option value="D-">D-</option>
+							<option value="F">F</option>
+							</select>
+						</div>
+		</td>
+			<td>
+				<div class="switch-toggle switch-custom">
+						<input id="row1opt0" name="view" type="radio" checked>
+						<label for="row1opt0" onclick="">0</label>
+
+						<input id="row1opt1" name="view" type="radio">
+						<label for="row1opt1" onclick="">1</label>
+
+						<input id="row1opt2" name="view" type="radio">
+						<label for="row1opt2" onclick="">2</label>
+
+						<input id="row1opt3" name="view" type="radio">
+						<label for="row1opt3" onclick="">3</label>
+
+						<input id="row1opt4" name="view" type="radio">
+						<label for="row1opt4" onclick="">4</label>
+
+						<input id="row1opt5" name="view" type="radio">
+						<label for="row1opt5" onclick="">5</label>
+
+						<a></a>
+			</div>
+		</td>
+		</tr>
+
+	</table>
+<button type="button" class="addButton" onclick="addElement()">ADD</button>
+<button type="button" class="calculateCGPA" onclick="c()">CALCULATE</button>
+	<h1 id="gpa" class="hidden">GPA</h1>
+<script src="cumulativeGPA.js"></script>
 
 </body>
 </html>

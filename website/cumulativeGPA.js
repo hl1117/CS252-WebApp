@@ -63,13 +63,23 @@ function totalCreditHours(gradeList){
 }
 
 function calculateGPA(grades){
-
+  // var tcreds = document.getElementById('creds').value;
+  // var cgpa = document.getElementById('cGPA').value;
+  // var tcred = document.getElementById('creds').value;
+  // var a = cgpa * tcred;
+  // console.log("tcreds: " + tcreds);
+  // console.log("cgpa: " + cgpa);
+  // console.log("index: " + a);
+  // var totalindex = subjectTotalCalculator(grades) + index;
+  // console.log("tot index: " + totalindex);
+  // var totalcreds = totalCreditHours(grades) + tcred;
+  // console.log("tot creds: " + totalcreds);
   return (subjectTotalCalculator(grades) / totalCreditHours(grades)).toFixed(2);
 }
 
 var gradesList = [''];
 
-function calculate(){
+function c(){
   list = document.getElementsByTagName('tr').length-1;
   for (var i = 0; i < list; i++){
     var row = "row" + (i+1);
@@ -94,9 +104,24 @@ function calculate(){
     gradesList[i] = [grade.options[grade.selectedIndex].value, hours];
 
   }
-  console.log(calculateGPA(gradesList));
+  var tcreds = document.getElementById('creds').value;
+  var cgpa = document.getElementById('cGPA').value;
+  var a = cgpa * tcreds;
+  var b = tcreds * 1;
+  console.log("tcreds: " + tcreds);
+  console.log("cgpa: " + cgpa);
+  console.log("index: " + a);
+  var totalindex = subjectTotalCalculator(gradesList) + a;
+  console.log("tot index: " + totalindex);
+  var totalcreds = totalCreditHours(gradesList) + b;
+  console.log("T original: " + totalCreditHours(gradesList));
+  console.log("tot creds: " + totalcreds);
+  var ngpa = (totalindex/totalcreds).toFixed(2);
+  console.log("new GPA: " + ngpa)
+  //console.log(calculateGPA(gradesList));
+  //console.log(calc(gradeList, grade));
   var gpaEL = document.getElementById('gpa');
-  gpaEL.textContent = 'GPA' + calculateGPA(gradesList);
+  gpaEL.textContent = 'GPA: ' + ngpa;
   gpaEL.className = ' ';
 
 }
@@ -143,9 +168,4 @@ function buildListElement(i){
   el += '<label for=\"row' + i + 'opt5\">5</label>';
   el += '<a></a></div></td>';
   return el;
-}
-
-
-function goToNewScreen() {
-	window.location.href='cumulativeGPA.html';
 }
