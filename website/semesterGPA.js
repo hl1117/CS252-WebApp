@@ -96,7 +96,7 @@ function calculate(){
   }
   console.log(calculateGPA(gradesList));
   var gpaEL = document.getElementById('gpa');
-  gpaEL.textContent = 'GPA' + calculateGPA(gradesList);
+  gpaEL.textContent = 'GPA: ' + calculateGPA(gradesList);
   gpaEL.className = ' ';
 
 }
@@ -128,19 +128,19 @@ function buildListElement(i){
   el += '<option value=\"D\">D</option>';
   el += '<option value=\"D-\">D-</option>';
   el += '<option value=\"F\">F</option></select></div></td>';
-  el += '<td><div class="switch-toggle switch-custom">';
-  el += '<input id=\"row' + i + 'opt0\" name=\"view' + i + '\" type=\"radio\" checked>';
-  el += '<label for=\"row' + i + 'opt0\">0</label>';
+  el += '<td><div class="switch-toggleswitch-custom">';
+  el += '<input id=\"row' + i + 'opt0\" name=\"view' + i + '\" type=\"radio\">';
+  el += '<label for=\"row' + i + 'opt0\"> 0    </label>';
   el += '<input id=\"row' + i + 'opt1\" name=\"view' + i + '\" type=\"radio\">';
-  el += '<label for=\"row' + i + 'opt1\">1</label>';
+  el += '<label for=\"row' + i + 'opt1\"> 1   </label>';
   el += '<input id=\"row' + i + 'opt2\" name=\"view' + i + '\" type=\"radio\">';
-  el += '<label for=\"row' + i + 'opt2\">2</label>';
+  el += '<label for=\"row' + i + 'opt2\"> 2   </label>';
   el += '<input id=\"row' + i + 'opt3\" name=\"view' + i + '\" type=\"radio\">';
-  el += '<label for=\"row' + i + 'opt3\">3</label>';
+  el += '<label for=\"row' + i + 'opt3\"> 3   </label>';
   el += '<input id=\"row' + i + 'opt4\" name=\"view' + i + '\" type=\"radio\">';
-  el += '<label for=\"row' + i + 'opt4\">4</label>';
+  el += '<label for=\"row' + i + 'opt4\"> 4   </label>';
   el += '<input id=\"row' + i + 'opt5\" name=\"view' + i + '\" type=\"radio\">';
-  el += '<label for=\"row' + i + 'opt5\">5</label>';
+  el += '<label for=\"row' + i + 'opt5\"> 5   </label>';
   el += '<a></a></div></td>';
   return el;
 }

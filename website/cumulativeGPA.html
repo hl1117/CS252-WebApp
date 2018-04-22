@@ -1,5 +1,6 @@
 <html>
 <body>
+
 	<head>
 		<link rel="stylesheet" href="cumulativeGPA.css">
 	</head>
@@ -13,10 +14,10 @@
 		<li><a href="profile.html">Profile Settings</a></li>
 	</ul>
 
-	<h1 id="header">Calculate Your Cumulative GPA</h1>
+	<h1 id="header">Cumulative GPA</h1>
 
-<input type="text" id="cGPA" placeholder="Cumulative GPA to date">
-	<input type="text" id="creds" placeholder="total credits earned to date">
+<input type="text" id="cGPA" placeholder="Cumulative GPA to date" class="t1">
+	<input type="text" id="creds" placeholder="Total credits earned to date" class="t2">
 
 	<table>
 		<tr>
@@ -71,9 +72,10 @@
 		</tr>
 
 	</table>
-<button type="button" class="addButton" onclick="addElement()">ADD</button>
-<button type="button" class="calculateCGPA" onclick="c()">CALCULATE</button>
-	<h1 id="gpa" class="hidden">GPA</h1>
+
+	<h2 id="gpa" class="hidden">GPA: </h2>
+	<button type="button" class="addButton" onclick="addElement()">ADD</button>
+	<button type="button" class="calculateCGPA" onclick="c()">CALCULATE</button>
 <script src="cumulativeGPA.js"></script>
 
 </body>

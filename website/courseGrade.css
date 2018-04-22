@@ -12,6 +12,25 @@ h1 {
   font-family: Rubik;
 }
 
+h2 {
+  color: #EAE7DC;
+  font-size: 50px;
+  /* text-align: center; */
+  margin-left: 29%;
+  font-family: Rubik;
+}
+
+th {
+  font-family: Rubik;
+  text-align: left;
+}
+
+input {
+  font-size: 20px;
+  color: blue;
+
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -35,4 +54,21 @@ li a:hover {
 .active {
   background-color: #4CAF50;
   color: white;
+}
+
+.calcgrade {
+  background-color: #EDC7B7;
+  font-size: 18px;
+  color: #AC3B61;
+  border-color: #EDC7B7;
+  border-radius: 8px;
+  margin-left: 44%;
+  font-family: Rubik;
+}
+
+
+table {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }

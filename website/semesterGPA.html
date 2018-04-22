@@ -25,6 +25,7 @@
 		    <td>Class 1</td>
 		    <td>
 				<div class="mdl-selectfield">
+					<div class="text">
         				<select id="row1Select">
         			  <option value="" disabled selected>Select</option>
           			<option value="A+/A">A+/A</option>
@@ -37,16 +38,16 @@
 						    <option value="C-">C-</option>
 						    <option value="D+">D+</option>
 						    <option value="D">D</option>
-                			<option value="D-">D-</option>
+                <option value="D-">D-</option>
 						    <option value="F">F</option>
 				        </select>
+							</div>
 				      </div>
 			</td>
 		    <td>
-		    	<div class="switch-toggle switch-custom">
-					    <input id="row1opt0" name="view" type="radio" checked>
+		    	<div class="switch-toggleswitch-custom">
+					    <input id="row1opt0" name="view" type="radio">
 					    <label for="row1opt0" onclick="">0</label>
-
 					    <input id="row1opt1" name="view" type="radio">
 					    <label for="row1opt1" onclick="">1</label>
 
@@ -68,12 +69,10 @@
 		  </tr>
 
 		</table>
-		<button type="button" class="addButton" onclick="addElement()">ADD</button>
-		<button type="button" class="calculateButton" onclick="calculate()">CALCULATE</button>
-		<button type="button" class="calculatecgpa" onclick="goToNewScreen()">CALCULATE CUMULATIVE GPA</button>
-<h1 id="gpa" class="hidden">GPA</h1>
 
-
+<h2 id="gpa" class="hidden">GPA: </h2>
+<button type="button" class="addButton" onclick="addElement()">ADD</button>
+<button type="button" class="calculateButton" onclick="calculate()">CALCULATE</button>
 
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
   <script>

@@ -36,6 +36,6 @@ function getInputs() {
 	var fgrade = (first / weights).toFixed(2);
 	console.log("fgrade: "+ fgrade);
   var gpaEL = document.getElementById('grade');
-  gpaEL.textContent = 'Current Grade ' + fgrade;
+  gpaEL.textContent = 'Current Grade: ' + fgrade;
   gpaEL.className = ' ';
 }
