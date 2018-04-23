@@ -1,9 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
 body {
-  background-color: powderblue;
+  background-color: #292B2F;
 }
 
+
 h1 {
-  color: blue;
+  color: #D7D5D9;
+  font-size: 100px;
+  text-align: center;
+  font-family: Rubik;
+  /*word-spacing: 20px;*/
+}
+
+
+.signin {
+  background-color: #018185;
+  font-size: 18px;
+  color: #D7D5D9;
+  border-color: #018185;
+  border-radius: 8px;
+  position: absolute;
+  left: 575px;
+  top: 400px;
+  font-family: Rubik;
 }
