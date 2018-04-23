@@ -1,19 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
+body {
+  background-color: #292B2F;
+}
+
+
 li {
   display: inline;
   float: left;
 }
 
 h1 {
-  color: #EAE7DC;
+  color: #3BBFC3;
   font-size: 100px;
   text-align: center;
   font-family: Rubik;
 }
 
 h2 {
-  color: #EAE7DC;
+  color: #3BBFC3;
   font-size: 50px;
   /* text-align: center; */
   margin-left: 29%;
@@ -23,11 +28,12 @@ h2 {
 th {
   font-family: Rubik;
   text-align: left;
+  color: #d7d5d9;
 }
 
 input {
   font-size: 20px;
-  color: blue;
+  color: #3BBFC3;
 
 }
 
@@ -36,31 +42,33 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #018185;
+  font-family: Rubik;
 }
 
 li a {
   display: block;
-  color: white;
+  color: #292B2F;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: Rubik;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #d7d5d9;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #d7d5d9;
   color: white;
 }
 
 .calcgrade {
-  background-color: #EDC7B7;
+  background-color: #d7d5d9;
   font-size: 18px;
-  color: #AC3B61;
-  border-color: #EDC7B7;
+  color: #292B2F;
+  border-color: #d7d5d9;
   border-radius: 8px;
   margin-left: 44%;
   font-family: Rubik;
