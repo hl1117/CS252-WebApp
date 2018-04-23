@@ -46,6 +46,7 @@
 
 <button type="button" onclick="updateinfo()" class="updateinfo">UPDATE PERSONAL SETTINGS</button>
 <button type="button" onclick="gotocollegewebsite()" class="gotocollegewebsite">VISIT YOUR COLLEGE WESBITE</button>
+<button class="logout"onclick="logout()">Logout</button>
 
 <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 <script>
@@ -59,6 +60,18 @@ var config = {
   messagingSenderId: "895628017578"
 };
 firebase.initializeApp(config);
+
+logout=()=>{
+  firebase.auth().signOut()
+  .then(function() {
+    //window.alert("Sign out Successful")
+    window.location = 'index.html'
+  }, function(error) {
+    window.alert("Sign out failed")
+  });
+}
+
+
 </script>
 
 <body onload ="script();">

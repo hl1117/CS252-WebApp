@@ -97,6 +97,19 @@ li a:hover {
   font-family: Rubik;
 }
 
+.logout {
+  background-color: #d7d5d9;
+  font-size: 18px;
+  color: #292B2F;
+  border-color: #d7d5d9;
+  border-radius: 8px;
+  /* position: absolute;
+   left: 225px;
+  top: 400px; */
+  font-family: Rubik;
+}
+
+
 
 select {
   font-family: Rubik;

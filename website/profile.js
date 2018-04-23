@@ -1,3 +1,6 @@
+
+
+
 function updateinfo() {
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
@@ -54,6 +57,7 @@ function retrieve() {
   var database = firebase.database();
   var ref = database.ref('profile');
   ref.on('value', gotData, errData);
+
 }
 
 var collegevalue;
@@ -95,6 +99,8 @@ function errData() {
 }
 
 function getstuff() {
+  console.log("college value: " + collegevalue);
+
   if (collegevalue == 'ag')
   {
     window.location.href='https://www.admissions.purdue.edu/majors/agriculture/index.php';
@@ -170,6 +176,7 @@ function gotData2(data) {
       document.getElementById('major').value = college[k].Major;
       document.getElementById('gradyear').value = college[k].YearofGraduation;
       document.getElementById('college').value = college[k].College;
+      collegevalue = college[k].College;
     }
   }
   }
