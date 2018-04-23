@@ -103,9 +103,9 @@ li a:hover {
   color: #292B2F;
   border-color: #d7d5d9;
   border-radius: 8px;
-  /* position: absolute;
-   left: 225px;
-  top: 400px; */
+  position: absolute;
+  left: 10px;
+  top: 610px;
   font-family: Rubik;
 }
 
