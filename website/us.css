@@ -12,21 +12,6 @@ h1 {
   font-family: Rubik;
 }
 
-h2 {
-  color: #EAE7DC;
-  font-size: 100px;
-  text-align: center;
-  font-family: Rubik;
-}
-
-h3 {
-  color: #EAE7DC;
-  font-size: 50px;
-  text-align: center;
-  font-family: Rubik;
-}
-
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -59,6 +44,23 @@ li a:hover {
   font-family: Rubik;
   border: 1px solid purd;
   /* padding: 20px; */
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
+}
+
+label {
+  font-family: Rubik;
+  font-size: 70px;
+}
+
+a img {
+  border: 0 none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.i {
+  font-size: 40px;
 }
