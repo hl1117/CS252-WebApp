@@ -8,7 +8,7 @@ li {
 h1 {
   color: #EAE7DC;
   font-size: 100px;
-  text-align: left;
+  text-align: center;
   font-family: Rubik;
   /*word-spacing: 20px;*/
 }
@@ -16,7 +16,7 @@ h1 {
 h2 {
   color: #EAE7DC;
   font-size: 50px;
-  text-align: left;
+  text-align: center;
   font-family: Rubik;
 }
 
@@ -100,6 +100,7 @@ select {
 
 table {
   width: 60%;
+  margin-left: 30%
 }
 
 input[type="radio"] {
@@ -126,6 +127,16 @@ input {
   border-bottom: 2px solid red;
 
 } */
+
+.simona {
+  display: inline-block;
+  margin-left: 44%;
+}
+
+.harika {
+  display: inline-block;
+  margin-left: 25%;
+}
 
 ::placeholder {
     font-size: 20px;

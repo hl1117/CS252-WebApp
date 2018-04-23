@@ -65,6 +65,7 @@ td {
   left: 25px;
   top: 400px; */
   font-family: Rubik;
+  /* margin-left: 50%; */
 }
 
 .calculateButton {
@@ -77,19 +78,9 @@ td {
   left: 90px;
   top: 400px; */
   font-family: Rubik;
+  /* margin-left: 50%; */
 }
 
- .calculatecgpa {
-  background-color: #EDC7B7;
-  font-size: 18px;
-  color: #AC3B61;
-  border-color: #EDC7B7;
-  border-radius: 8px;
-  /* position: absolute;
-   left: 225px;
-  top: 400px; */
-  font-family: Rubik;
-}
 
 select {
   font-family: Rubik;
@@ -98,8 +89,15 @@ select {
 
 table {
   width: 60%;
+  margin-left: 33%;
+  /* margin-right: auto; */
 }
 
 input[type="radio"] {
   margin-right: 5px;
+}
+
+.ass {
+  display: inline-block;
+  margin-left: 44%;
 }
