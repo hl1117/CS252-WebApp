@@ -12,6 +12,21 @@ h1 {
   font-family: Rubik;
 }
 
+h2 {
+  color: #EAE7DC;
+  font-size: 100px;
+  text-align: center;
+  font-family: Rubik;
+}
+
+h3 {
+  color: #EAE7DC;
+  font-size: 50px;
+  text-align: center;
+  font-family: Rubik;
+}
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -35,4 +50,15 @@ li a:hover {
 .active {
   background-color: #4CAF50;
   color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* padding: 10px; */
+  font-family: Rubik;
+  border: 1px solid purd;
+  /* padding: 20px; */
+  font-size: 30px;
+  text-align: center;
 }
