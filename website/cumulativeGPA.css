@@ -1,12 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 
+body {
+  background-color: #292B2F;
+}
+
+
 li {
   display: inline;
   float: left;
 }
 
 h1 {
-  color: #EAE7DC;
+  color: #3BBFC3;
   font-size: 100px;
   text-align: center;
   font-family: Rubik;
@@ -14,7 +19,7 @@ h1 {
 }
 
 h2 {
-  color: #EAE7DC;
+  color: #3BBFC3;
   font-size: 50px;
   text-align: center;
   font-family: Rubik;
@@ -25,23 +30,23 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #018185;
 }
 
 li a {
   display: block;
-  color: white;
+  color: #292B2F;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #d7d5d9;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #d7d5d9;
   color: white;
 }
 
@@ -51,17 +56,19 @@ th {
   text-align: left;
   font-family: Rubik;
   height: 50px;
+  color: #d7d5d9;
 }
 
 td {
   font-family: Rubik;
+  color: #d7d5d9;
 }
 
 .addButton {
-  background-color: #EDC7B7;
+  background-color: #d7d5d9;
   font-size: 18px;
-  color: #AC3B61;
-  border-color: #EDC7B7;
+  color: #292B2F;
+  border-color: #d7d5d9;
   border-radius: 8px;
   /* position: absolute;
   left: 25px;
@@ -70,10 +77,10 @@ td {
 }
 
 .calculateButton {
-  background-color: #EDC7B7;
+  background-color: #d7d5d9;
   font-size: 18px;
-  color: #AC3B61;
-  border-color: #EDC7B7;
+  color: #292B2F;
+  border-color: #d7d5d9;
   border-radius: 8px;
   /* position: absolute;
   left: 90px;
@@ -82,10 +89,10 @@ td {
 }
 
  .calculatecgpa {
-  background-color: #EDC7B7;
+  background-color: #d7d5d9;
   font-size: 18px;
-  color: #AC3B61;
-  border-color: #EDC7B7;
+  color: #292B2F;
+  border-color: #d7d5d9;
   border-radius: 8px;
   /* position: absolute;
    left: 225px;
@@ -117,7 +124,7 @@ input[type=text]:focus {
 
 input {
   font-size: 20px;
-  color: blue;
+  color: #3BBFC3;
 
 }
 
